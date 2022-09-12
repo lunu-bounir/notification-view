@@ -1,0 +1,9 @@
+body {
+  font-size: 13px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+p {
+  display: grid;
+  grid-gap: 5px;
+  justify-content: start;
+}
