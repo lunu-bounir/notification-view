@@ -18,7 +18,7 @@
 */
 
 class NotificationView extends HTMLElement {
-  static version = '0.1.0';
+  static version = '0.1.1';
 
   constructor() {
     super();
@@ -143,6 +143,9 @@ class NotificationView extends HTMLElement {
     div.scrollIntoView();
 
     setTimeout(() => div.remove(), timeout);
+  }
+  clean() {
+    this.shadowRoot.getElementById('body').textContent = '';
   }
 }
 customElements.define('notification-view', NotificationView);
